@@ -6,13 +6,13 @@
     <body>
         <div id="wrapper"></div>
         <h2>Realizar Pedidos</h2>
-		<form class="pedidos">
-			<input type="text" placeholder="Ingresar Nombre" name="Nombre">
-			<input type="text" placeholder="Ingresar Correo" name="Correo">
-			<input type="text" placeholder="Tel&eacute;fono" name="Telefono">
-			<input type="text" placeholder="Ingresar Direcci&oacute;n" name="Direccion">
+		<form class="Pedidos" method="POST" action="enviar.php">
+			<input type="text" placeholder="Nombre*" name="nombre" required>
+			<input type="text" placeholder="Correo*" name="correo" required>
+			<input type="text" placeholder="Tel&eacute;fono" name="telefono">
+			<input type="text" placeholder="Ingresar Direcci&oacute;n*" name="direccion" required>
 			<textarea placeholder="Descripci&oacute;n de orden" name="msg"></textarea>
-
+            <input type="submit" value="Enviar Mensaje" id="btnSend">
         </form>
     </div>
     </body>
